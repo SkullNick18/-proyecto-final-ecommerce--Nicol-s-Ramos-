@@ -2,7 +2,7 @@
     display: flex;
     justify-content: left;
     width:100%;
-    height: 70px;
+    height: 50px;
     box-sizing: border-box;
     background-color: rgb(33, 94, 112);
 }
@@ -10,7 +10,7 @@
 #bannerblanco {
     background-color: rgb(33, 94, 112);
     width:100%;
-    margin: 0;
+    text-align: center;
 }
 
 .banner {
@@ -32,7 +32,6 @@ h2 {
     text-decoration: none;
     color: white;
     font-size:15px;
-    padding-left: 0px;
 }
 
 .nav-list:hover {
@@ -44,6 +43,7 @@ h2 {
     text-decoration: none;
     background-color: rgb(33, 94, 112);
     text-align: center;
+    padding-left: -20px;
 }
 
 .productos {
@@ -69,7 +69,7 @@ h2 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    width: 100%;
 }
 
 
@@ -107,9 +107,12 @@ h2 {
 }
 
 @media only screen and (min-width: 500px) {
+    .logo {
+        height: 75px;
+    }
     .nav-list {
         font-size:25px;
-        display: space-evenly;
+        display: bottom;
         margin-right:20px;
     }
 }
