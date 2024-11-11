@@ -1,46 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Slectores Avanzados</title>
+    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/580438d814.js" crossorigin="anonymous"></script>
 </head>
 <body class="banner" style='background-image: url("img/fondo.jpg");'>
     <div id="bannerblanco">
-    <header>
-        <div class="logo">
-        <img src="img/logo.png" alt="imagen N-Tek" >
-        </div>
-    </header>
-    <nav>
-        <ul class="nav-main">
-            <li><a class="nav-list" href="#">Inicio</a></li>
-            <li><a class="nav-list" href="#">Productos</a></li>
-            <li><a class="nav-list" href="#">Reseñas</a></li>
-            <li><a class="nav-list" href="contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
+        <header>
+            <div class="logo">
+            <img src="img/logo.png" alt="imagen N-Tek" >
+            <nav>
+                <ul class="nav-main">
+                    <li><a class="nav-list" href="#">Inicio</a></li>
+                    <li><a class="nav-list" href="#">Productos</a></li>
+                    <li><a class="nav-list" href="#">Reseñas</a></li>
+                    <li><a class="nav-list" href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            </div>
+        </header>
+        
     </div> 
     <main>
-        <h1>Titul</h1>
-        <div class="container">
-            <div class="box_1" >
-                <img src="img/productos.jpg" alt="">
-                <p>holo</p>
+        
+        <section class="productos">
+            <div class="producto">
+            <img src="img/productos.jpg" alt="">
+            <h2>Producto 1</h2>
+            <a href=""></a>
             </div>
-            <div class="box_2"></div>
-            <div class="box_3"></div>
-        </div>
+            <div class="producto">
+            <img src="img/productos.jpg" alt="">
+            <h2>Producto 2</h2>
+            <a href=""></a>
+            </div>
+            <div class="producto">
+            <img src="img/productos.jpg" alt="">
+            <h2>Producto 3</h2>
+            <a href=""></a>
+            </div>
+            <div class="producto">
+            <img src="img/productos.jpg" alt="">
+            <h2>Producto 4</h2>
+            <a href=""></a>
+            </div>
+        </section>
+
+        <div class="centre">
+            <h2>Contacto</h2>
+            <form
+                action="https://formspree.io/f/xbljdnro"
+                method="POST">
+            <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" cols="20" required></textarea>
+            </div>
+            <div>
+            <button type="submit">Enviar</button>
+            </div>
+            </form>
+            </div>
     </main>
     <footer>
         <div id="footer"> <!-- Flex container -->
-            <div class="item_item-1">© 2024 Mi Sitio Web. Todos los derechos reservados.</div> <!-- Flex items -->
-            <div class="item_item-2">2</div>
-            <i class="fa-sharp-duotone fa-solid fa-phone"> 4 5 454</i>
-            <div class="item_item-3">3</div>
+            <div class="grid-container"> <!-- Elemento padre -->
+                <div class="grid-item"><i class="fa-sharp-duotone fa-solid fa-phone"></i> 
+                    <text>+52 33 3612 7301</text>
+                </div>
+                <div class="grid-item">
+    
+                </div>
+                <div class="grid-item">3</div>
+                <div class="grid-item"><i class="fa-solid fa-envelope"></i>
+                    <text>nicoframos@gmail.com</text>
+                </div>
+                <div class="grid-item">5</div>
+                <div class="grid-item">6</div>
+                <div class="grid-item">7</div>
+                <div class="grid-item">8</div>
+                <div class="grid-item">9</div>
+            </div> 
+            <div class="item_item-1">información de contacto.</div> <!-- Flex items -->
         </div> 
         
     </footer>
