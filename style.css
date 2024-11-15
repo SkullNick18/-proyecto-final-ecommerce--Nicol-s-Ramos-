@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,500,300italic,500italic,700italic,900,300);
+
 .logo {
     display: flex;
     justify-content: left;
@@ -21,9 +23,23 @@
     margin: 0;
 }
 
+
+
 h2 {
-    font-size:25px;
     text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+}
+
+.video iframe {
+    display: flex;
+    width: 300px; 
+    height: 320px; 
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: auto; 
 }
 
 
@@ -35,7 +51,7 @@ h2 {
 }
 
 .nav-list:hover {
-    background-color: brown;
+    color: rgba(255, 251, 0, 0.856);
 }
 
 .nav-main {
@@ -44,6 +60,14 @@ h2 {
     background-color: rgb(33, 94, 112);
     text-align: center;
     padding-left: -20px;
+}
+
+.acercade {
+    margin: auto;
+    padding: 10px;
+    width: auto;
+    background-color: #33f3f3;
+    justify-content: center;
 }
 
 .productos {
@@ -58,11 +82,39 @@ h2 {
     background-color: #2196F3; /* Fondo azul */
     color: white; /* Color del texto */
     padding:10px; /* Relleno interno de cada producto */
-    margin: 30px; /* Margen externo de cada producto */
+    margin: 20px; /* Margen externo de cada producto */
     flex: 1 1 200px; /* Ajuste flexible: crece, encoge, tamaño
     base 200px */
     box-sizing: border-box; /* Incluir relleno y borde en el tamaño
     total */
+    border-radius: 25px;
+    transition: all .5s ease;
+}
+
+.button {
+    background-color: #664601fb;
+     /* Fondo azul */
+    color: white; /* Color del texto */
+    padding:10px; /* Relleno interno de cada producto */
+    margin: 0px 60px; /* Margen externo de cada producto */
+    flex: 1 1 200px; /* Ajuste flexible: crece, encoge, tamaño
+    base 200px */
+    box-sizing: border-box; /* Incluir relleno y borde en el tamaño
+    total */
+    border-radius: 25px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.button:active {
+    background-color: #b37a00fb; /* Fondo color */
+}
+
+.producto:hover {
+    transform: translate3D(0,-1px,0) scale(1.03); /* move up slightly and zoom in */
+    box-shadow: 8px 28px 50px rgba(39,44,49,.07), 1px 6px 12px rgba(39,44,49,.04);
+    transition: all .4s ease; /* zoom in */
+    cursor: pointer;
 }
 
 .producto img {
@@ -70,33 +122,65 @@ h2 {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+    border-radius: 25px;
 }
 
+.reseñas {
+    display: grid;
+    grid-template-columns: 1 1 1;
+    background-color: #2196F3;
+    padding: 35px;
+    margin-bottom: 50px;
+    justify-content:center;
+    font-size:25px;
+}
 
+#user {
+    background-color: #464e55;
+    font-size:35px;
+    margin:10px;
+    padding: 15px;
+}
+
+#fondouser {
+    background-color: #ffffff;
+}
 #footer {
     display: column;
     align-items: center;
     height: 200px;
     width: 100%;
-    background-color: #eaeaea;
+    background-color: #3a3a3a;
+    color: white;
     justify-content: center;
     }
 
+.item {
+    text-align: center;
+    font-size: 15px;
+}
+
 .grid-container {
         display: grid;
-        grid-template-columns:  repeat(3, auto);
-        grid-gap:  10px;
-        padding: 10px;
+        grid-template-columns:  repeat(2, auto);
+        padding: 20px;
         justify-content: space-around;
+        font-size:20px;
+        padding: 10px;
+}
+
+.grid-item{
+    font-size:30px;
+    margin-bottom: 10px;
 }
 
 .centre {
     font-size:25px;
     margin: auto;
-    padding: 10px;
-    width: 60%;
-    background-color: #ab1abe;
-    justify-content: center;
+    padding: 20px;
+    width: auto;
+    background-color: #33f3f3;
+    justify-content: left;
 }
 
 
@@ -104,6 +188,8 @@ h2 {
     .grid-container text {
         display: none;
     }
+
+    
 }
 
 @media only screen and (min-width: 500px) {
@@ -115,6 +201,25 @@ h2 {
         display: bottom;
         margin-right:20px;
     }
+    .video iframe {
+        display: flex;
+        width: 560px; 
+        height: 315px; 
+        padding-top: 50px;
+        margin: auto; 
+    }
+    
+    .grid-container {
+        display: grid;
+        grid-template-columns:  repeat(2, auto);
+        padding: 20px;
+        justify-content: space-around;
+        font-size:25px;
+    }
+
+    .item {
+        font-size: 25px;
+    }
 }
 
 li {
@@ -122,11 +227,26 @@ li {
     text-align: left;
 }
 
+p {
+    text-align: center;
+    font-size:30px;
+}
+
+form {
+    clear:left;
+    text-align: center;
+}
+
+button {
+    font-size:20px;
+}
+
 label {
     float:left;
-    width:200px;
+    width:100%;
     font-size:25px;
-    margin-top: 12px;
+    margin-top: 6px;
     clear:left;
+    justify-content: left;
 }
 input, textarea {margin-top: 12px;}
