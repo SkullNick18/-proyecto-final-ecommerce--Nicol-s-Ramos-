@@ -6,6 +6,7 @@
     <title>Slectores Avanzados</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/580438d814.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 <body class="banner" style='background-image: url("img/fondo.jpg");'>
     <div id="bannerblanco">
@@ -14,10 +15,10 @@
             <img src="img/logo.png" alt="imagen N-Tek" >
             <nav>
                 <ul class="nav-main">
-                    <li><a class="nav-list" href="#">Inicio</a></li>
-                    <li><a class="nav-list" href="#">Productos</a></li>
-                    <li><a class="nav-list" href="#">Reseñas</a></li>
-                    <li><a class="nav-list" href="contacto.html">Contacto</a></li>
+                    <li><a class="nav-list" href="#bannerblanco">Inicio</a></li>
+                    <li><a class="nav-list" href="#produc">Productos</a></li>
+                    <li><a class="nav-list" href="#reseñ">Reseñas</a></li>
+                    <li><a class="nav-list" href="#contacto">Contacto</a></li>
                 </ul>
             </nav>
             </div>
@@ -26,31 +27,60 @@
     </div> 
     <main>
         
-        <section class="productos">
+        <div class="video">
+            <iframe  src="https://www.youtube.com/embed/msR8t_Rf1ZQ?si=2SuCvaC5kqoyRlst" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        
+        <section>
+            <div class="acercade">
+                <h2>¿Quienes somos?</h2>
+                <p>N-Tek es una empresa que se dedica a vender herramientas o productos electrónicos según tu necesidad.</p>
+            </div>
+        </section>
+
+        <section id="produc" class="productos">
             <div class="producto">
-            <img src="img/productos.jpg" alt="">
-            <h2>Producto 1</h2>
+            <img src="img/soldador.webp" alt="">
+            <h2>Soldador</h2>
+            <p>$9.812</p>
+            <div class="button">Comprar</div>
             <a href=""></a>
             </div>
             <div class="producto">
-            <img src="img/productos.jpg" alt="">
-            <h2>Producto 2</h2>
+            <img src="img/sierra.png" alt="">
+            <h2>Sierra</h2>
+            <p>$370,408</p>
+            <div class="button">Comprar</div>
             <a href=""></a>
             </div>
             <div class="producto">
-            <img src="img/productos.jpg" alt="">
-            <h2>Producto 3</h2>
+            <img src="img/agujeradora.webp" alt="">
+            <h2>Agujereadora</h2>
+            <p>$112,398</p>
+            <div class="button">Comprar</div>
             <a href=""></a>
             </div>
             <div class="producto">
-            <img src="img/productos.jpg" alt="">
-            <h2>Producto 4</h2>
+            <img src="img/podadora.jpg" alt="">
+            <h2>Podadora</h2>
+            <p>$350.400</p>
+            <div class="button">Comprar</div>
             <a href=""></a>
             </div>
         </section>
 
+        
+        <section>
+            <div class="reseñas">
+                <h2 id="reseñ">Reseñas</h2>
+                <div id="fondouser"><i id="user" class="fa-solid fa-user"></i>Maya18: Muy buenos productos a buen precio.</div>
+                <div id="fondouser"><i id="user" class="fa-solid fa-user"></i>Lucio64: Tiene las herramientas necesarias para mis trabajos.</div>
+                <div id="fondouser"><i id="user" class="fa-solid fa-user"></i>DaveMarcus: Tiene una muy buena variedad de herramientas y productos.</div>
+            </div>
+        </section>
+
         <div class="centre">
-            <h2>Contacto</h2>
+            <h2 id="contacto">Contacto</h2>
             <form
                 action="https://formspree.io/f/xbljdnro"
                 method="POST">
@@ -78,22 +108,16 @@
                 <div class="grid-item"><i class="fa-sharp-duotone fa-solid fa-phone"></i> 
                     <text>+52 33 3612 7301</text>
                 </div>
-                <div class="grid-item">
-    
-                </div>
-                <div class="grid-item">3</div>
+                <div class="grid-item"><i class="fa-brands fa-square-facebook"></i><text>   Facebook</text></div>
+                
                 <div class="grid-item"><i class="fa-solid fa-envelope"></i>
-                    <text>nicoframos@gmail.com</text>
+                <text>nicoframos@gmail.com</text>
                 </div>
-                <div class="grid-item">5</div>
-                <div class="grid-item">6</div>
-                <div class="grid-item">7</div>
-                <div class="grid-item">8</div>
-                <div class="grid-item">9</div>
+                <div class="grid-item"><i class="fa-brands fa-twitter"></i><text>Twitter</text></div>
             </div> 
-            <div class="item_item-1">información de contacto.</div> <!-- Flex items -->
+
+            <div class="item">© 2024 Mi Sitio Web. Todos los derechos reservados.</div> <!-- Flex items -->
         </div> 
-        
     </footer>
 </body>
 </html>
