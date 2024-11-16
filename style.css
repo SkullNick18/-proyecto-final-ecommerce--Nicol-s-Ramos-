@@ -106,6 +106,29 @@ h2 {
     font-size: 25px;
 }
 
+.ver {
+    display: flex;
+    background-color: #928801fb;
+     /* Fondo azul */
+    color: white; /* Color del texto */
+    padding:20px; /* Relleno interno de cada producto */
+    margin: 40px 600px; /* Margen externo de cada producto */
+    flex: 1 1 200px; /* Ajuste flexible: crece, encoge, tamaño
+    base 200px */
+    box-sizing: border-box; /* Incluir relleno y borde en el tamaño
+    total */
+    border-radius: 25px;
+    font-size: 25px;
+    width: auto;
+    text-align: center;
+    justify-content:center;
+    text-decoration: none;
+}
+
+.ver:active {
+    background-color: #5e5c15fb; /* Fondo color */
+}
+
 .button:active {
     background-color: #b37a00fb; /* Fondo color */
 }
