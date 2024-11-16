@@ -112,7 +112,7 @@ h2 {
      /* Fondo azul */
     color: white; /* Color del texto */
     padding:20px; /* Relleno interno de cada producto */
-    margin: 40px 600px; /* Margen externo de cada producto */
+    margin: 50px auto; /* Margen externo de cada producto */
     flex: 1 1 200px; /* Ajuste flexible: crece, encoge, tamaño
     base 200px */
     box-sizing: border-box; /* Incluir relleno y borde en el tamaño
@@ -230,6 +230,10 @@ h2 {
         height: 315px; 
         padding-top: 50px;
         margin: auto; 
+    }
+
+    .ver {
+        margin: 50px 600px; /* Margen externo de cada producto */
     }
     
     .grid-container {
