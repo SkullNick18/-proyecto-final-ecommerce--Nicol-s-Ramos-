@@ -129,7 +129,7 @@ h2 {
     background-color: #2196F3; /* Fondo azul */
     color: white; /* Color del texto */
     padding:10px; /* Relleno interno de cada producto */
-    margin: 20px; /* Margen externo de cada producto */
+    margin: 21px; /* Margen externo de cada producto */
     flex: 1 1 200px; /* Ajuste flexible: crece, encoge, tamaño
     base 200px */
     box-sizing: border-box; /* Incluir relleno y borde en el tamaño
