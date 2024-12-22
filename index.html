@@ -20,12 +20,25 @@
                     <li><a class="nav-list" href="#produc">Productos</a></li>
                     <li><a class="nav-list" href="#reseñ">Reseñas</a></li>
                     <li><a class="nav-list" href="#contacto">Contacto</a></li>
+                    <li><a class="nav-list" id="hero_cta" onclick="handleCart()"><i class="fa-solid fa-cart-shopping"></i></a></li>
                 </ul>
             </nav>
             </div>
         </header>
-        
     </div> 
+
+    <section class="modal">
+        <section class="modal_container">
+            <div class="cart-items" id="contenido"></div>
+                
+                <h2 class="modal_title"></h2>
+                <button class="btn btn-danger btn-sm ms-2" onclick="removeFromCart()">Vaciar Carrito</button>
+                <button class="btn btn-danger btn-sm ms-2">Comprar</button>
+                <p class="modal_paragraph"></p>
+                <a href="#" class="modal_close">Cerrar</a>
+        </section>
+    </section>
+
     <main>
         
         <div class="video">
@@ -38,36 +51,53 @@
                 <p>N-Tek es una empresa que se dedica a vender herramientas o productos electrónicos según tu necesidad.</p>
             </div>
         </section>
-
+        
         <section id="produc" class="productos">
-            <div class="producto">
-            <img src="img/soldador.webp" alt="">
-            <h2>Soldador</h2>
-            <p>$9.812</p>
-            <div class="button">Comprar</div>
+            <div class="card">
+                <img src="img/soldador.webp" alt="">
+                <div class="item">
+                    <h2 id="articulo" >Soldador</h2>
+                    <p id="precio">$9.812</p>
+                    <p class="texto1"></p>
+            <button class="button" onclick="desc1()">Descripcion</button>
+            <button id="soldador" name="soldador" value="9812"  class="button" onclick="agregar(name, value)">Comprar</button>
+
+                </div>
+            <a href=""></a>
+            
+            </div>
+            <div class="card">
+                <img src="img/sierra.png" alt="">
+                <h2 id="articulo">Sierra</h2>
+                <p id="precio">$70408</p>
+                <p class="texto2"></p>
+                <button class="button" onclick="desc2()">Descripcion</button>
+            <button id="sierra" name="sierra" value="370,408" class="button" onclick="agregar(name, value)">Comprar</button>
+            
             <a href=""></a>
             </div>
-            <div class="producto">
-            <img src="img/sierra.png" alt="">
-            <h2>Sierra</h2>
-            <p>$370,408</p>
-            <div class="button">Comprar</div>
-            <a href=""></a>
-            </div>
-            <div class="producto">
+            <div class="card">
             <img src="img/agujeradora.webp" alt="">
             <h2>Agujereadora</h2>
-            <p>$112,398</p>
-            <div class="button">Comprar</div>
+            <p id="precio">$12398</p>
+            <p class="texto3"></p>
+            <button class="button" onclick="desc3()">Descripcion</button>
+            <button id="agujereadora2" name="agujereadora" value="112398" class="button" onclick="agregar(name, value)">Comprar</button>
             <a href=""></a>
             </div>
-            <div class="producto">
+
+            <div class="card">
             <img src="img/podadora.jpg" alt="">
             <h2>Podadora</h2>
-            <p>$350.400</p>
-            <div class="button">Comprar</div>
+            <p id="precio">$50400</p>
+            <p class="texto4"></p>
+            <button class="button" onclick="desc4()">Descripcion</button>
+            <button class="button" name="agujereadora" value="112398" onclick="agregar(name, value)">Comprar</button>
             <a href=""></a>
             </div>
+            
+            
+            <div class="count"></div>
         </section>
 
         <a class="ver" href="productos.html">Ver más</a>
@@ -121,5 +151,6 @@
             <div class="item">© 2024 Mi Sitio Web. Todos los derechos reservados.</div> <!-- Flex items -->
         </div> 
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
